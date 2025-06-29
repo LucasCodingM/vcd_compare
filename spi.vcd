@@ -1,0 +1,350 @@
+$date
+  Sun Jun 29 14:36:04 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_spi_flash_controller $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var reg 1 # start $end
+$var reg 8 $ data_in[7:0] $end
+$var reg 8 % data_out[7:0] $end
+$var reg 1 & done_flag $end
+$var reg 1 ' spi_clk $end
+$var reg 1 ( spi_mosi $end
+$var reg 1 ) spi_miso $end
+$var reg 1 * spi_cs $end
+$var reg 8 + shift_debug[7:0] $end
+$scope module uut $end
+$var reg 1 , clk $end
+$var reg 1 - reset $end
+$var reg 1 . start $end
+$var reg 8 / data_in[7:0] $end
+$var reg 8 0 data_out[7:0] $end
+$var reg 1 1 done_flag $end
+$var reg 1 2 spi_clk $end
+$var reg 1 3 spi_mosi $end
+$var reg 1 4 spi_miso $end
+$var reg 1 5 spi_cs $end
+$var reg 8 6 shift_debug[7:0] $end
+$comment state is not handled $end
+$var integer 32 7 clk_div_cnt $end
+$var reg 1 8 spi_clk_int $end
+$var integer 32 9 bit_cnt $end
+$var reg 8 : shift_reg_tx[7:0] $end
+$var reg 8 ; shift_reg_rx[7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+b10100101 $
+bUUUUUUUU %
+0&
+0'
+0(
+1)
+1*
+bUUUUUUUU +
+0,
+1-
+0.
+b10100101 /
+bUUUUUUUU 0
+01
+02
+03
+14
+15
+bUUUUUUUU 6
+b0 7
+08
+b0 9
+bUUUUUUUU :
+bUUUUUUUU ;
+#5000000
+1!
+1,
+#10000000
+0!
+0,
+#15000000
+1!
+1,
+#20000000
+0!
+0"
+0,
+0-
+#25000000
+1!
+1,
+b1 7
+#30000000
+0!
+0,
+#35000000
+1!
+1,
+b10 7
+#40000000
+0!
+0,
+#45000000
+1!
+1,
+b11 7
+#50000000
+0!
+1#
+0,
+1.
+#55000000
+1!
+1,
+b100 7
+b111 9
+b10100101 :
+#60000000
+0!
+0#
+0,
+0.
+#65000000
+1!
+1'
+0*
+1,
+12
+05
+b0 7
+18
+#70000000
+0!
+0,
+#75000000
+1!
+b1UUUUUUU +
+1,
+b1UUUUUUU 6
+b1 7
+b110 9
+b1UUUUUUU ;
+#80000000
+0!
+0,
+#85000000
+1!
+b11UUUUUU +
+1,
+b11UUUUUU 6
+b10 7
+b101 9
+b11UUUUUU ;
+#90000000
+0!
+0,
+#95000000
+1!
+b111UUUUU +
+1,
+b111UUUUU 6
+b11 7
+b100 9
+b111UUUUU ;
+#100000000
+0!
+0,
+#105000000
+1!
+b1111UUUU +
+1,
+b1111UUUU 6
+b100 7
+b11 9
+b1111UUUU ;
+#110000000
+0!
+0,
+#115000000
+1!
+0'
+b11111UUU +
+1,
+02
+b11111UUU 6
+b0 7
+08
+b10 9
+b11111UUU ;
+#120000000
+0!
+0,
+#125000000
+1!
+1(
+1,
+13
+b1 7
+#130000000
+0!
+0,
+#135000000
+1!
+1,
+b10 7
+#140000000
+0!
+0,
+#145000000
+1!
+1,
+b11 7
+#150000000
+0!
+0,
+#155000000
+1!
+1,
+b100 7
+#160000000
+0!
+0,
+#165000000
+1!
+1'
+1,
+12
+b0 7
+18
+#170000000
+0!
+0,
+#175000000
+1!
+b111111UU +
+1,
+b111111UU 6
+b1 7
+b1 9
+b111111UU ;
+#180000000
+0!
+0,
+#185000000
+1!
+b1111111U +
+1,
+b1111111U 6
+b10 7
+b0 9
+b1111111U ;
+#190000000
+0!
+0,
+#195000000
+1!
+b11111111 +
+1,
+b11111111 6
+b11 7
+b11111111 ;
+#200000000
+0!
+0,
+#205000000
+1!
+b11111111 %
+1&
+1*
+1,
+b11111111 0
+11
+15
+b100 7
+#210000000
+0!
+0,
+#215000000
+1!
+0&
+0'
+1,
+01
+02
+b0 7
+08
+#220000000
+0!
+0,
+#225000000
+1!
+1,
+b1 7
+#230000000
+0!
+0,
+#235000000
+1!
+1,
+b10 7
+#240000000
+0!
+0,
+#245000000
+1!
+1,
+b11 7
+#250000000
+0!
+0,
+#255000000
+1!
+1,
+b100 7
+#260000000
+0!
+0,
+#265000000
+1!
+1'
+1,
+12
+b0 7
+18
+#270000000
+0!
+0,
+#275000000
+1!
+1,
+b1 7
+#280000000
+0!
+0,
+#285000000
+1!
+1,
+b10 7
+#290000000
+0!
+0,
+#295000000
+1!
+1,
+b11 7
+#300000000
+0!
+0,
