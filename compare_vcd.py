@@ -84,7 +84,7 @@ def compare_tv_data(vcd1, ref_map1, vcd2, ref_map2):
     common_signals = set(ref_map1.keys()) & set(ref_map2.keys())
     print("\n=== Comparing TV data of common signals ===")
 
-    for sig in sorted(common_signals):
+    for sig in common_signals:
         refs1 = ref_map1[sig]
         refs2 = ref_map2[sig]
 
@@ -114,7 +114,7 @@ def compare_tv_data(vcd1, ref_map1, vcd2, ref_map2):
             return val
 
         # Compare values at each timestamp
-        differences = []
+        # differences = []
         for ts in ts_all:
             val1 = get_val_at(tv1, ts)
             val2 = get_val_at(tv2, ts)
@@ -126,10 +126,12 @@ def compare_tv_data(vcd1, ref_map1, vcd2, ref_map2):
             val2_padded = val2.zfill(max_len)
 
             if val1_padded != val2_padded:
-                differences.append((ts, val1_padded, val2_padded))
+                print(f"\nDifferences in signal {sig}")
+                break
+                #differences.append((ts, val1_padded, val2_padded))
 
-        if differences:
-            print(f"\nDifferences in signal {sig}:")
+        #if differences:
+            # print(f"\nDifferences in signal {sig}:")
             #for ts, v1, v2 in differences:
            #     print(f"  At time {ts}: file1={v1}, file2={v2}")
 
